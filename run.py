@@ -13,4 +13,4 @@ def cb(msg):
     rospy.init_node('client') #create a new node and name it "client"
     rospy.Subscirber('/camshift/track_box',RotatedRectStamped,cb)
     pub=roapy.Publisher('/image_marker',ImageMarker2) #define subscriber and publisher
-    rospy.spin() #continue this until the process is cancelled
+    rospy.spin() #continue this until the process is terminated
